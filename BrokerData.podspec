@@ -4,9 +4,10 @@ Pod::Spec.new do |s|
   s.summary          = 'BrokerSDK.BrokerData'
   s.homepage         = 'https://github.com/BCS-Broker/BrokerData'
   s.author           = 'BCS'
-  s.source           = { :http => "https://github.com/BCS-Broker/BrokerData/archive/#{s.version}.zip"}
+  s.source           = { :http => "https://github.com/BCS-Broker/BrokerData/releases/download/#{s.version}/BrokerData.zip" }
   s.license          = { :type => 'MIT', :file => "LICENSE" }
   s.platform     = :ios
+  s.swift_versions = "5.0"
   s.ios.deployment_target = '10.0'  
   s.vendored_frameworks = 'BrokerData.xcframework' 
   s.dependency 'RxCocoa', '~> 5.0.1'
