@@ -1,6 +1,6 @@
 Pod::Spec.new do |s|
   s.name             = 'BrokerData'
-  s.version          = '2.0.10'
+  s.version          = '2.0.11'
   s.summary          = 'BrokerSDK.BrokerData'
   s.homepage         = 'https://github.com/BCS-Broker/BrokerData'
   s.author           = 'BCS'
@@ -9,7 +9,8 @@ Pod::Spec.new do |s|
   s.platform     = :ios
   s.swift_versions = "5.0"
   s.ios.deployment_target = '11.0'
-  s.vendored_frameworks = 'BrokerData.xcframework' 
+  s.vendored_frameworks = 'BrokerData.framework' 
+  s.public_header_files = '*.framework/**/*.h'
   s.dependency 'RxCocoa', '~> 5.0.1'
   s.dependency 'RxObservableCache', '~> 2.1.0'
   s.dependency 'Starscream', '~> 3.1'
