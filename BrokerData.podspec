@@ -9,8 +9,8 @@ Pod::Spec.new do |s|
   s.platform     = :ios
   s.swift_versions = "5.0"
   s.ios.deployment_target = '11.0'
-  s.vendored_frameworks = 'BrokerData.framework' 
-  s.public_header_files = '*.framework/**/*.h'
+  s.vendored_frameworks = 'BrokerData.xcframework' 
+  s.source_files = 'BrokerData.xcframework/*/BrokerData.framework/Headers/*.{h,m,swift}'
   s.dependency 'RxCocoa', '~> 5.0.1'
   s.dependency 'RxObservableCache', '~> 2.1.0'
   s.dependency 'Starscream', '~> 3.1'
