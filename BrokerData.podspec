@@ -1,6 +1,6 @@
 Pod::Spec.new do |s|
   s.name             = 'BrokerData'
-  s.version          = '2.0.18'
+  s.version          = '2.0.19'
   s.summary          = 'BrokerSDK.BrokerData'
   s.homepage         = 'https://github.com/BCS-Broker/BrokerData'
   s.author           = 'BCS'
